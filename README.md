@@ -9,7 +9,7 @@ The goal of this repo is to **practice problem-solving**, improve **coding skill
 ## 📖 How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/data-structures-and-algorithms.git
+   git clone https://github.com/kamat-abhi/data-structure-algorithm.git
    ```
 2. Navigate to the repo:
    ```bash
