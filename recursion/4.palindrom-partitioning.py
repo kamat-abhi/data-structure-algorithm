@@ -1,5 +1,5 @@
 class Solution:
-    def partition(self, s: str) -> List[List[str]]:
+    def partition(self, s: str):
         result = []
         self.helper(0, [], s, result)
         return result
@@ -28,7 +28,7 @@ class Solution:
 # Another approach
 
 class Solution:
-    def partition(self, s: str) -> List[List[str]]:
+    def partition(self, s: str):
         temp = []
         result = []
         def is_palindrome(l, r):
