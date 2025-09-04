@@ -6,4 +6,4 @@
 4. [Palindrome-Partitioning](https://leetcode.com/problems/palindrome-partitioning/description/)
 5. [Word Break - 2](https://www.geeksforgeeks.org/problems/word-break-part-23249/1)
 6. [ Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)
-7. [ Combination Sum II](https://leetcode.com/problems/combination-sum-ii/submissions/1758867632/)
+7. [ Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
