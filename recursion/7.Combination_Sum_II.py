@@ -1,5 +1,5 @@
 class Solution:
-    def combinationSum2(self, candidates):
+    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
         result = []
         candidates.sort()  
         self.solve(candidates, 0, target, [], result)
