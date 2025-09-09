@@ -9,3 +9,4 @@
 7. [ Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
 8. [ Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/)
 9. [N-Queens](https://leetcode.com/problems/n-queens/description/)
+10. [Word Search](https://leetcode.com/problems/word-search/description/)
