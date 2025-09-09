@@ -1,6 +1,6 @@
 from typing import List
 
-#Approach 1: Backtracking
+#Approach 1: Backtracking with all checks for validity
 class Solution:
     def solveNQueens(self, n: int) -> List[List[str]]:
         result = []
@@ -43,4 +43,42 @@ class Solution:
                     board[row] = "".join(row_list)
 
         solve(board, 0)
-        return result                    
+        return result     
+#Approach 2: Backtracking with optimized validity checks using sets
+class Solution:
+    def solveNQueens(self, n: int) -> List[List[str]]:
+        result = []
+        board = ["." * n for _ in range(n)]
+        cols = set()
+        diagonal = set()
+        anti_diagonal = set()
+
+        def solve(board, row):
+            if row == n:
+                result.append(board[:])
+                return
+            for col in range(n):
+                diagConstant = row+col
+                antiDiagConst = row-col
+                if col in cols or diagConstant in diagonal or antiDiagConst in anti_diagonal:
+                    continue
+                cols.add(col)
+                diagonal.add(diagConstant)
+                anti_diagonal.add(antiDiagConst)
+
+                row_list = list(board[row])
+                row_list[col] = "Q"
+                board[row] = "".join(row_list)
+
+                solve(board, row + 1)
+
+                cols.remove(col)
+                diagonal.remove(diagConstant)
+                anti_diagonal.remove(antiDiagConst)
+                
+                row_list[col] = "."
+                board[row] = "".join(row_list)
+
+        solve(board, 0)
+        return result
+                  
